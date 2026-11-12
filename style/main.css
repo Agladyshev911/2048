@@ -90,10 +90,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Score"; }
+  content: "Очки"; }
 
 .best-container:after {
-  content: "Best"; }
+  content: "Рекорд"; }
 
 p {
   margin-top: 0;
@@ -756,3 +756,37 @@ hr {
     margin-top: 90px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }
+
+
+/* 2048 — моя версия: синяя тема. Оригинальная игра © Gabriele Cirulli, MIT. */
+html, body { background: #eff6ff; color: #1e3a8a; }
+a { color: #1d4ed8; }
+hr { border-bottom-color: #bfdbfe; }
+.edition-label {
+  display: block;
+  font-size: 19px;
+  line-height: 1.2;
+  color: #2563eb;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.score-container, .best-container { background: #1e40af; color: #fff; }
+.score-container:after, .best-container:after { color: #dbeafe; }
+.score-container .score-addition, .best-container .score-addition { color: #1d4ed8; }
+.restart-button, .game-container .game-message a { background: #1d4ed8; color: #fff; }
+.game-container { background: #1e40af; }
+.grid-cell { background: rgba(219, 234, 254, 0.30); }
+.tile.tile-2 .tile-inner { background: #dbeafe; color: #1e3a8a; }
+.tile.tile-4 .tile-inner { background: #bfdbfe; color: #1e3a8a; }
+.tile.tile-8 .tile-inner { background: #93c5fd; color: #1e3a8a; }
+.tile.tile-16 .tile-inner { background: #60a5fa; color: #fff; }
+.tile.tile-32 .tile-inner { background: #3b82f6; color: #fff; }
+.tile.tile-64 .tile-inner { background: #2563eb; color: #fff; }
+.tile.tile-128 .tile-inner { background: #1d4ed8; color: #fff; }
+.tile.tile-256 .tile-inner { background: #1e40af; color: #fff; }
+.tile.tile-512 .tile-inner { background: #1e3a8a; color: #fff; }
+.tile.tile-1024 .tile-inner { background: #172554; color: #fff; }
+.tile.tile-2048 .tile-inner { background: #0f172a; color: #fff; }
+.tile.tile-super .tile-inner { background: #020617; color: #fff; }
+.game-container .game-message.game-won { background: rgba(96, 165, 250, 0.55); }
+.game-container .game-message p { font-size: 40px; line-height: 1.2; height: auto; }
